@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    width: 23%;
+    position: static;
+    font-size: 15px;
+    color: coral;
+    border-bottom-width: 4px;
+}
+
+ul li a:hover {
+    background-color: red;
+    color: white;
+    padding: 4px;
+}
+
+.back {
+    background-color: #f4ff91;
+}
+
+.dely {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    background-color: rgba(255, 0, 0, 0.9);
+    transform: skewY(25deg);
+}
+
+.dely:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}
+
+.comunicacion {
+    text-align: center;
+
+}
+
+.color {
+    background-image: linear-gradient(to top, red, yellow);
+    color: darkred;
+    text-align: center;
+}
+
+
+
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: crimson;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    text-decoration: coral;
+    border-top-color: snow;
+    border-right-color: tan;
+}
+
+h2 {
+    
+    font-size: 25px;
+    text-align: center;
+    border-top-color: darkgrey;
+    color: indigo;
+    font-family: 'Dancing Script', cursive;
+
+}
+h2:hover {
+    background-color:yellowgreen;
+    color: white;
+    padding:4px;
+    border-bottom-width: 8px;
+}
+
+
+
+
+
+h3 {
+    font-size: 15px;
+    text-align: center;
+    color: darkred;
+}
+
+.oferta1 {
+    width: 380px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+
+}
+
+.oferta2 {
+    width: 400px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+.oferta3 {
+    width: 380px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+
+    
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color:wheat;
+    padding: 20px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255);
+    border: 10px solid black;
+    text-align: center;
+    font-size: 150px;
+  }
+  .box-1 {
+    grid-area: box1;
+    background-color:red
+    }
+    .box-2 {
+    grid-area: box2;
+    background-color:violet
+    }
+    .box-3 {
+    grid-area: box3;
+    background-color:green
+    }
+    .box-4 {
+    grid-area: box4;
+    background-color:yellow
+    }
+    .box-5 {
+    grid-area: box5;
+    background-color:lightgray;
+    }
+    
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color:tomato;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1f1;
+    width: 100px;
+    margin: 3px;
+    text-align: center;
+    display: inline-block;
+    line-height: 35px;
+    font-size: 15px;
+  }
+section {
+    margin: 20px;
+    display: inline-block;
+}
+ 
+.online {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    background-image: linear-gradient(to bottom, red, yellow);
+}
+
+.redes {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #F83319;
+}
+@media only screen and (min-width: 1210px) {
+	.container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .box-2 {
+      grid-row: 1 / 3;
